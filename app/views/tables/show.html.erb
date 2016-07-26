@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @table.name %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @table.discount %>
+</p>
+
+<p>
+  <strong>Expiration date:</strong>
+  <%= @table.expiration_date %>
+</p>
+
+<p>
+  <strong>Situacao:</strong>
+  <%= @table.situacao %>
+</p>
+
+<%= link_to 'Edit', edit_table_path(@table) %> |
+<%= link_to 'Back', tables_path %>

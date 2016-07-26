@@ -1,0 +1,75 @@
+pt-BR:
+  products:
+    index:
+      code: 'Código'
+      confirm: 'Você tem certeza?'
+      description: 'Descrição'
+      destroy: 'Destruir'
+      edit: 'Editar'
+      multiple: 'Multiplo'
+      name: 'Nome'
+      new: 'Novo Produto'
+      status: 'Situação'
+      show: 'Ver'
+      title: 'Listar Produtos'
+      weight: 'Peso'
+    edit:
+      back: 'Voltar'
+      show: 'Ver Produto'
+      title: 'Editar Produto'
+    new:
+      back: 'Voltar'
+      title: 'Novo Produto'
+    form:
+      code: 'Código'
+      confirm: 'Você tem certeza?'
+      description: 'Descrição'
+      destroy: 'Destruir'
+      edit: 'Editar'
+      multiple: 'Multiplo'
+      name: 'Nome'
+      new: 'Novo Produto'
+      prohibited: 'esse produto não pode ser salvo'
+      status: 'Situação'
+      submit: 'Criar Produto'
+      show: 'Ver'
+      weight: 'Peso'
+    show:
+      back: 'Voltar'
+      code: 'Código'
+      description: 'Descrição'
+      edit: 'Editar'
+      multiple: 'Multiplo'
+      name: 'Nome'
+      status: 'Situação'
+      weight: 'Peso'
+  tables:
+    index:
+      confirm: 'Você tem certeza?'
+      discount: 'Desconto'
+      destroy: 'Destruir'
+      edit: 'Editar'
+      expiration_date: 'Data de Validade'
+      name: 'Nome'
+      new: 'Nova Tabela'
+      status: 'Situação'
+      show: 'Ver'
+      title: 'Listar Tabelas'
+    new:
+      back: 'Voltar'
+      title: 'Nova Tabela'
+    edit:
+      back: 'Voltar'
+      show: 'Ver Tabela'
+      title: 'Nova Tabela'
+    form:
+      discount: 'Desconto'
+      expiration_date: 'Data de Validade'
+      name: 'Nome'
+      prohibited: 'essa tabela não pode ser salva'
+      status: 'Situação'
+      submit: 'Criar Tabela'
+
+
+
+

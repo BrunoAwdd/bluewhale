@@ -1,0 +1,61 @@
+<%= form_for(@table) do |f| %>
+  <% if @table.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@table.errors.count, "error") %> <%= t('.prohibited') %>:</h2>
+
+      <ul>
+      <% @table.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#geral" aria-controls="geral" role="tab" data-toggle="tab">Geral</a></li>
+    <li role="presentation"><a href="#vendedores" aria-controls="vendedores" role="tab" data-toggle="tab">Vendedores</a></li>
+    <li role="presentation"><a href="#tipos_de_venda" aria-controls="tipo_de_venda" role="tab" data-toggle="tab">Tipos de Venda</a></li>
+  </ul>
+
+    <div class="tab-content">
+
+      <section id="geral" role="tabpanel" class="tab-pane active">
+        <h4>Geral</h4>
+        <div class="form-group">
+          <%= f.label :name, t('.name'), class:'label-control' %><br>
+          <%= f.text_field :name, class:'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :discount, t('.discount'), class:'label-control' %><br>
+          <%= f.number_field :discount, class:'form-control' %>
+        </div>
+
+        <div class="form-inline">
+          <div class="form-group">
+            <%= f.label :expiration_date, t('.expiration_date'), class:'label-control' %><br>
+            <%= f.date_select :expiration_date, {start_year: Time.now.year, end_year: Time.now.year + 20},
+                                {class: 'form-control '}   %>
+          </div>
+          <div class="form-group">
+            <%= f.label :status, t('.status'), class:'label-control' %><br>
+            <%= f.number_field :status, class:'form-control' %>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="vendedores" role="tabpanel" class="tab-pane">
+        <h4>Vendedores</h4>
+      </section>
+
+      <section id="tipos_de_venda" role="tabpanel" class="tab-pane">
+        <h4>Tipos de Venda</h4>
+      </section>
+
+    </div>
+
+    <div class="actions">
+      <%= f.submit t('.submit'), class:'btn btn-primary' %>
+    </div>
+<% end %>
